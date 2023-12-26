@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;600&display=swap');
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+:root{
+  --background-color: #1C1B1F;
+  --text-color: #ECECEC;
+  --primary-color: #FFC429;
+  --secondary-color: #323137;
+}
+body {
+  margin: 0px;
+  padding: 10px;
+  font-family: 'Sofia Sans', sans-serif;
+  text-align: center;
+  background-color: var(--background-color);
+}
+p{
+  margin-bottom: 15px;
+}
+a{
+  color: var(--text-color);
+  text-decoration: none;
+}
+a:hover{
+  color: var(--primary-color);
+}
+button{
+  background-color: var(--text-color);
+  color: var(--secondary-color);
+  font-family: 'Sofia Sans', sans-serif;
+  border: none;
+}
+button:hover{
+  cursor: pointer;
+}
+input{
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 16px;
+  border: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 0s 600000s, color 0s 600000s;
+}
+header{
+  height: 10vh;
+}
+footer{
+  height: 10vh;
+}
+.footer_cont{
+  height: 100%;
+}
+p{
+  font-size: 14px;
+  font-family: 'Sofia Sans', sans-serif;
+  color: var(--primary-color);
+}
+h3{
+  color: var(--text-color);
+}
+.border_subtitle{
+  border-bottom: 1px solid var(--text-color);
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 769px) {
+  .libros_title{
+    font-size: 30px;
+  }
+  .home_libros_cont{
+    height: 150px;
+    width: 180px;
+    border-radius: 10px;
+  }
+  .home_cont{
+    height: 78vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .libros_cont{
+    min-height: 80vh;
+  }
+    .libros_input_cont{
+      width: 30%;
+      margin: 0 auto;
+    }
+}
+.libros_title{
+  color: var(--text-color);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.home_libros_cont{
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.home_libros_cont:hover{
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.home_cont{
+  width: 100%;
+}
+.buscar{
+  width: 100%;
+}
+.buscar_subtitle{
+  padding-bottom: 15px;
+}
+.input_acciones_libros{
+  width: 100%;
+  border-radius: 5px;
+  height: 30px;
+}
+.btn_buscar_libros{
+  width: 100%;
+  border-radius: 5px;
+  height: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  transition: 0.5s;
+}
+.btn_buscar_libros:hover{
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  transition: 0.5s;
+}
+#agregarLibro{
+  margin-top: 30px;
+}
